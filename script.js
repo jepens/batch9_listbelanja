@@ -7,7 +7,7 @@ let root = document.getElementById("root");
 let subtitle = document.getElementById("subtitle");
 
 // tambahkan date ke subtitle
-subtitle.innerHTML = new Date().toLocaleDateString();
+subtitle.innerHTML=new Date().toLocaleDateString();
 
 // data list belanja *array
 let data_list_belanja = [];
@@ -107,7 +107,15 @@ function renderToHtml(){
 // function untuk delete data dalam array data_list_belanja
 function handleDelete(index){
 
-  data_list_belanja.splice(index, 1);
+  
+  let conDelete = confirm('yakin delete bang ?');
+
+  if (!conDelete) {
+    return;
+  } else {
+    //delete data array sesuai index
+    data_list_belanja.splice(index, 1);
+  }
 
   renderToHtml();
 }
