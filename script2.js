@@ -69,9 +69,9 @@ tl.to(
   '-=0.6'
 );
 tl.to(polygons, 1, { rotation: 30, x: 20, y: -10 });
-tl.add('Abdul M');
+tl.add('Tugas');
 tl.call(function () {
-  startText.innerHTML = 'Abdul M';
+  startText.innerHTML = 'Tugas';
 });
 tl.set(startText, {
   opacity: 0,
@@ -89,9 +89,9 @@ tl.staggerTo(
     ease: Power1.easeOut,
     stagger: { amount: 0.5, from: 'center' },
   },
-  'Abdul M'
+  'Tugas'
 );
-tl.to(startText, 0.7, { opacity: 1 }, 'Abdul M');
+tl.to(startText, 0.7, { opacity: 1 }, 'Tugas');
 tl.set(startText, { x: '+=47px', scale: 1.3 });
 tl.call(function () {
   startText.innerHTML = 'Apk';
